@@ -12,17 +12,17 @@ type FavoriteListProps = {
 
 const FavoriteList = () => {
 	const historyList = useAppSelector(state => state.history.favorites)
-	const FavoriteList = historyList.slice(0, 4)
+	const FavoriteList = historyList.slice(0, 6)
 
 	const date = formatDate(new Date()).split(', ')
 
 	return (
 		FavoriteList.length > 0 && (
-			<div className={styles.history}>
-				<div className={styles.history_header}>
-					<h2 className={styles.history_title}>Избранное</h2>
+			<div className={styles.favorites}>
+				<div className={styles.favoritesHeader}>
+					<h2 className={styles.favoritesTitle}>Избранное</h2>
 				</div>
-				<ul className={styles.history_list}>
+				<ul className={styles.favoritesGrid}>
 					{FavoriteList.map(item => (
 						<FavoriteWeatherItem key={item.city} city={item.city} day={date} />
 					))}
@@ -37,17 +37,20 @@ const FavoriteWeatherItem = ({ city, day }: FavoriteListProps) => {
 
 	const dispatch = useAppDispatch()
 	return (
-		<li className={styles.banner} onClick={() => dispatch(setCityName(city))}>
-			<div className={styles.item}>
-				<div className={styles.info}>
-					<p className={styles.temp_info}>{weather?.temperature}°C</p>
-					<p className={styles.city_info}>{city}</p>
-					<p className={styles.city_info}>{day[1]}</p>
+		<li
+			className={styles.weatherCard}
+			onClick={() => dispatch(setCityName(city))}
+		>
+			<div className={styles.weatherCardContent}>
+				<div className={styles.weatherInfo}>
+					<p className={styles.temperature}>{weather?.temperature}°C</p>
+					<p className={styles.metaText}>{city}</p>
+					<p className={styles.metaText}>{day[1]}</p>
 				</div>
 
-				<div className={styles.day_img}>
+				<div className={styles.weatherAside}>
 					<button
-						className={styles.favorite_button}
+						className={styles.favoriteButton}
 						onClick={e => {
 							e.stopPropagation()
 							dispatch(removeFromFavorites(city))

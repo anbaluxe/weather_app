@@ -3,32 +3,51 @@ input::placeholder {
 }
 
 input {
+	flex: 1;
+	background: transparent;
+	border: none;
+	color: white;
+	font-size: 15px;
 	outline: none;
 }
 
 .search {
-	width: 340px;
-	height: 41px;
+	width: 100%;
+	max-width: 520px;
 	display: flex;
 	align-items: center;
+	gap: 12px;
+
 	background-color: rgb(14, 20, 33);
 	border-radius: 50px;
-	position: relative;
-	padding: 0 15px;
+	padding: 6px;
+	margin-bottom: 20px;
 }
 
 .form_search {
 	display: flex;
-	gap: 15px;
+	align-items: center;
+	gap: 10px;
+	flex: 1;
+	padding: 0 12px;
 }
 
 .button_search {
-	width: 140px;
-	height: 31px;
+	height: 32px;
+	padding: 0 18px;
+
 	background-color: rgb(116, 43, 236);
 	border-radius: 50px;
 	color: white;
-	font-size: 16px;
-	position: absolute;
-	right: 15px;
+	font-size: 14px;
+	white-space: nowrap;
+
+	border: none;
+	cursor: pointer;
+	transition: opacity 0.2s ease;
+}
+
+.button_search:disabled {
+	opacity: 0.5;
+	cursor: default;
 }

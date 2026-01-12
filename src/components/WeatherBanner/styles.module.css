@@ -1,37 +1,43 @@
 .banner {
-	width: 400px;
-	height: 300px;
+	width: 100%;
+	align-self: center;
+	min-height: 360px;
+	max-width: none;
 	background-color: rgb(14, 20, 33);
-	padding: 28px 30px;
-	border-radius: 50px;
-	margin: 20px 0;
+	padding: 28px;
+	border-radius: 40px;
+	margin-bottom: 20px;
 }
 
 .position {
-	width: 100%;
-	height: 40px;
-	text-align: center;
-	background-color: rgb(116, 43, 236);
-	display: flex;
-	justify-content: center;
+	display: inline-flex;
 	align-items: center;
-	gap: 12px;
-	padding: 10px 13px;
-	border-radius: 50px;
+	gap: 8px;
+	padding: 6px 14px;
+	background-color: rgb(116, 43, 236);
+	border-radius: 999px;
+	font-size: 14px;
+	font-weight: 500;
 }
 
 .date {
-	font-size: 40px;
+	font-size: 22px;
+	font-weight: 500;
+	margin: 0;
 }
 
 .date_info {
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
+	gap: 10px;
+	opacity: 0.75;
+	margin-bottom: 40px;
 }
 
 .temp {
-	font-size: 64px;
+	font-size: 56px;
+	font-weight: 600;
+	line-height: 1.05;
 }
 
 .day_info {
@@ -43,29 +49,30 @@
 .info {
 	display: flex;
 	flex-direction: column;
-	gap: 34px;
+	gap: 20px;
+	margin-top: 20px;
 }
 
 .temp_info {
+	margin-top: auto;
 	display: flex;
 	align-items: center;
-	gap: 5px;
-	position: relative;
+	gap: 12px;
 }
+
 .temp_info img {
-	position: absolute;
-	top: 0;
+	position: static;
+	width: 40px;
 }
 
 .favorite_icon {
-	width: 40px;
-	height: 30px;
+	width: 32px;
+	height: auto;
 	cursor: pointer;
 }
+
 .day_header {
-	width: 300px;
 	display: flex;
-	justify-content: end;
+	justify-content: space-between;
 	align-items: center;
-	gap: 40px;
 }

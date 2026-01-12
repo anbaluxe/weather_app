@@ -1,0 +1,24 @@
+.main {
+	display: flex;
+}
+
+.container {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+@media (min-width: 1000px) {
+	.info {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+		align-items: start;
+	}
+}
