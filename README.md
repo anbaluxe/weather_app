@@ -55,9 +55,7 @@ src/
  ├─ app/            # Redux store & typed hooks
  ├─ components/     # UI components
  ├─ features/       # Redux slices
- ├─ hooks/          # Custom hooks
  ├─ pages/          # App pages
  ├─ services/       # RTK Query API
  ├─ helpers/        # Utility functions
- ├─ types/          # Type definitions
 ```
