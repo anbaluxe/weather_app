@@ -1,14 +1,13 @@
 import { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { RootState } from '../../app/store'
+import { useAppDispatch, useAppSelector } from '../../app/hooks'
 import { clearHistory } from '../../features/history/historySlice'
 import { setViewMode } from '../../features/ui/uiSlice'
 import { formatDate } from '../../helpers/formatDate'
 import styles from './style.module.css'
 
 const History = () => {
-	const historyList = useSelector((state: RootState) => state.history.items)
-	const dispatch = useDispatch()
+	const historyList = useAppSelector(state => state.history.items)
+	const dispatch = useAppDispatch()
 	const [historyListSlice, setHistoryListSlice] = useState(historyList)
 
 	return (

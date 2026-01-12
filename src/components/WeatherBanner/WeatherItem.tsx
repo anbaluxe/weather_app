@@ -1,4 +1,4 @@
-import { Weather } from '../../features/weather/weatherTypes'
+import type { Weather } from '../../features/weather/weatherTypes'
 import styles from './styles.module.css'
 
 interface WeatherItemProps {

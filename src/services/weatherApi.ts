@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import { Weather } from '../features/weather/weatherTypes'
-import { WeatherApiResponse } from './weatherApi.types'
+import type { Weather } from '../features/weather/weatherTypes'
+import type { WeatherApiResponse } from './weatherApi.types'
 
 const BASE_URL = import.meta.env.VITE_WEATHER_BASE_URL
 const API_KEY = import.meta.env.VITE_WEATHER_API_KEY

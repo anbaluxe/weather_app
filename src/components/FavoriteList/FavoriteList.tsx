@@ -1,6 +1,4 @@
-import { useSelector } from 'react-redux'
-import { useAppDispatch } from '../../app/hooks'
-import { RootState } from '../../app/store'
+import { useAppDispatch, useAppSelector } from '../../app/hooks'
 import { setCityName } from '../../features/city/citySlice'
 import { removeFromFavorites } from '../../features/history/historySlice'
 import { formatDate } from '../../helpers/formatDate'
@@ -13,7 +11,7 @@ type FavoriteListProps = {
 }
 
 const FavoriteList = () => {
-	const historyList = useSelector((state: RootState) => state.history.favorites)
+	const historyList = useAppSelector(state => state.history.favorites)
 	const FavoriteList = historyList.slice(0, 4)
 
 	const date = formatDate(new Date()).split(', ')

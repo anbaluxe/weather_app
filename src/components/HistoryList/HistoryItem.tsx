@@ -1,6 +1,6 @@
 import { useAppDispatch } from '../../app/hooks'
 import { setCityName } from '../../features/city/citySlice'
-import { HistoryItem } from '../../features/history/historyTypes'
+import type { HistoryItem } from '../../features/history/historyTypes'
 import { setViewMode } from '../../features/ui/uiSlice'
 import { formatDate, formatTime } from '../../helpers/formatDate'
 import styles from './styles.module.css'
