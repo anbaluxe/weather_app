@@ -1,0 +1,105 @@
+body {
+	background-color: rgb(6, 12, 26);
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	margin: 20px 20px;
+}
+
+.history_header {
+	display: flex;
+	justify-content: space-around;
+	align-items: start;
+}
+
+.history_all_button {
+	width: 130px;
+	height: 37px;
+	padding: 10px 10px;
+	margin-right: 25px;
+	color: rgb(103, 107, 115);
+	background-color: rgb(14, 20, 33);
+	border-radius: 30px;
+	font-size: 14px;
+}
+
+.history_all_button:hover {
+	color: rgb(255, 255, 255);
+}
+
+.banner {
+	width: 570px;
+	height: 90px;
+	background-color: rgb(14, 20, 33);
+	padding: 20px 40px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.temp_info {
+	font-size: 38px;
+	font-weight: 500;
+	line-height: 58px;
+}
+
+.city_info {
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+.info {
+	text-align: left;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.item {
+	display: flex;
+	gap: 20px;
+	align-items: start;
+}
+
+.history_title {
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 50px;
+}
+
+.history_list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	justify-items: center;
+}
+
+.history_back_button {
+	rotate: 180deg;
+}
+
+input::placeholder {
+	color: rgb(103, 107, 115);
+}
+
+input {
+	outline: none;
+}
+
+.search {
+	width: 340px;
+	height: 41px;
+	display: flex;
+	align-items: center;
+	background-color: rgb(14, 20, 33);
+	border-radius: 50px;
+	position: relative;
+	padding: 0 15px;
+}
+
+.form_search {
+	display: flex;
+	gap: 15px;
+}

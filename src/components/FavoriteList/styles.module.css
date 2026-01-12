@@ -1,0 +1,82 @@
+.history {
+	width: 600px;
+}
+
+.history_header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.history_all_button {
+	width: 97px;
+	height: 37px;
+	padding: 10px 10px;
+	margin-right: 25px;
+	color: rgb(103, 107, 115);
+	background-color: rgb(14, 20, 33);
+	border-radius: 30px;
+	font-size: 14px;
+}
+
+.history_all_button:hover {
+	color: rgb(255, 255, 255);
+}
+
+.banner {
+	width: 400px;
+	height: 160px;
+	background-color: rgb(14, 20, 33);
+	padding: 20px 40px;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+.temp_info {
+	font-size: 38px;
+	font-weight: 500;
+	line-height: 58px;
+}
+
+.city_info {
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+.info {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.item {
+	display: flex;
+	gap: 20px;
+	align-items: start;
+}
+
+.history_title {
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+
+.history_list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+
+.favorite_button {
+	width: 20px;
+	height: 20px;
+}
+
+.day_img {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	gap: 5px;
+	flex-direction: column;
+}
