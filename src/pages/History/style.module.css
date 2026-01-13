@@ -121,3 +121,36 @@ input {
 	gap: 10px;
 	flex: 1;
 }
+
+@media (max-width: 768px) {
+	.history_list {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+	.history_header {
+		grid-template-columns: auto 1fr;
+		grid-template-areas:
+			'back title'
+			'search search';
+		row-gap: 12px;
+	}
+
+	.history_back_button {
+		grid-area: back;
+	}
+
+	.history_title {
+		grid-area: title;
+		margin-bottom: 5px;
+	}
+
+	.search {
+		grid-area: search;
+		max-width: 100%;
+		margin-bottom: 5px;
+	}
+
+	.history_all_button {
+		display: none;
+	}
+}

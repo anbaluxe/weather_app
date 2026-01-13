@@ -13,36 +13,49 @@ input {
 
 .search {
 	width: 100%;
-	max-width: 520px;
-	display: flex;
-	align-items: center;
-	gap: 12px;
+	max-width: 420px;
 
-	background-color: rgb(14, 20, 33);
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	align-items: center;
+	column-gap: 12px;
+
+	padding: 6px 10px;
 	border-radius: 50px;
-	padding: 6px;
+	background-color: rgb(14, 20, 33);
+
+	overflow: hidden;
 	margin-bottom: 20px;
 }
 
 .form_search {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	flex: 1;
-	padding: 0 12px;
+	display: contents;
+}
+
+.form_search svg {
+	flex-shrink: 0;
+}
+
+.form_search input {
+	width: 100%;
+	min-width: 0;
+	background: transparent;
+	border: none;
+	color: white;
+	font-size: 14px;
+	outline: none;
 }
 
 .button_search {
 	height: 32px;
-	padding: 0 18px;
-
-	background-color: rgb(116, 43, 236);
+	padding: 0 14px;
 	border-radius: 50px;
+	background-color: rgb(116, 43, 236);
 	color: white;
 	font-size: 14px;
-	white-space: nowrap;
 
 	border: none;
+	white-space: nowrap;
 	cursor: pointer;
 	transition: opacity 0.2s ease;
 }
